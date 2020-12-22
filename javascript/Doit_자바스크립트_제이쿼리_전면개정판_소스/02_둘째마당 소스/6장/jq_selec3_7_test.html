@@ -9,6 +9,12 @@ $(function( ){
 	var $txt1 = $(".txt_1 span"),
 					$txt2 = $(".txt_2 span"),
 					$box = $(".box");
+
+	var off_t = $box.offset().top;
+	var post_t = $box.position().top;
+
+	$txt1.text(off_t);
+	$txt2.text(post_t);
 });
 </script>
 <style>
