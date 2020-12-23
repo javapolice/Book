@@ -6,7 +6,20 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function( ) {
-	
+	$(".btn1").on({
+		"mouseover" : function(){
+			$(".txt1").css({"background-color" : "yellow"});
+		},
+		"mouseout" : function(){
+			$(".txt1").css({"background-color" : "transparent"});
+		}
+	});
+
+	$(".btn2").hover(function(){
+		$(".txt2").css({"background-color" : "aqua"});
+	}, function(){
+		$(".txt2").css({"background-color" : "transparent"});
+	});
 });
 </script>
 </head>
